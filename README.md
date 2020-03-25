@@ -1,2 +1,2 @@
-# _na_jwerly_store
-negar afshar jewerly online store
+# _na_jewelry_store
+negar afshar jewelry online store
