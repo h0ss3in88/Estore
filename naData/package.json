@@ -7,7 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["nodejs","mongoose"],
+  "keywords": [
+    "nodejs",
+    "mongoose"
+  ],
   "author": "Hussein Taherian",
   "license": "ISC",
   "dependencies": {

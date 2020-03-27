@@ -5,6 +5,19 @@ class UserRepository extends BaseRepository{
     constructor(args) {
         super(args.connectionString);
     }
+    getUserByEmail(email) {
+        return new Promise((resolve, reject) => {
+            User.findOne({'email': email},(err, user) => {
+                if(err) {
+                    return reject(err);
+                }else if(user && user !== undefined && user !== null) {
+                    return resolve(user);
+                } else {
+                    return reject(new Error('something bad happened'));
+                }
+            });
+        });
+    }
     saveUser(obj) {
         return new Promise((resolve, reject) => {
             let user = new User(obj);
@@ -99,6 +112,17 @@ class UserRepository extends BaseRepository{
                     return reject(err);
                 } else {
                     return resolve(true);
+                }
+            });
+        });
+    }
+    updateOne(id,obj) {
+        return new Promise((resolve, reject) => {
+            User.findByIdAndUpdate(id,obj,(err, res) => {
+                if(err) {
+                    return reject(err);
+                }else {
+                    return resolve(res);
                 }
             });
         });
