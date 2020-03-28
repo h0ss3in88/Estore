@@ -1,4 +1,4 @@
-const {Model} = require('mongoose');
+const {model} = require('mongoose');
 const {CategorySchema} = require('../../schemas');
-const Category = new Model('Category',CategorySchema);
+const Category = new model('Category',CategorySchema);
 module.exports = Object.assign({},{Category});

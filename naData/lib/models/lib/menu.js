@@ -1,4 +1,4 @@
-const {Model} = require('mongoose');
+const {model} = require('mongoose');
 const {MenuSchema} = require('../../schemas');
-const Menu = new Model('Menu',MenuSchema);
+const Menu = new model('Menu',MenuSchema);
 module.exports = Object.assign({},{Menu});

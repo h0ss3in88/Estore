@@ -4,7 +4,7 @@ const UserSchema = new Schema({
     email: {type: String, unique: true},
     hashedPassword: {type: String, required: true},
     isActive: {type: Boolean, default: false},
-    lastLoginAt: {type: Boolean, default: Date.now()},
+    lastLoginAt: {type: Date, default: Date.now()},
     profile: {
         firstName: {type: String},
         lastName: {type: String},

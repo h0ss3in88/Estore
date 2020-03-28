@@ -8,11 +8,15 @@ class UserRepository extends BaseRepository{
     getUserByEmail(email) {
         return new Promise((resolve, reject) => {
             User.findOne({'email': email},(err, user) => {
+                console.log(user);
                 if(err) {
                     return reject(err);
                 }else if(user && user !== undefined && user !== null) {
                     return resolve(user);
-                } else {
+                } else if(user === null) {
+                    return resolve(null);
+                }
+                else {
                     return reject(new Error('something bad happened'));
                 }
             });
