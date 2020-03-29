@@ -1,0 +1,46 @@
+{
+  "name": "namembership",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Membership module for na jewelry website that use for authentication and authorization",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./specs/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h0ss3in88/_na_jewelry_store"
+  },
+  "keywords": [
+    "nodejs",
+    "authentication",
+    "javascript",
+    "jwt",
+    "passport"
+  ],
+  "author": "Hussein Taherian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h0ss3in88/_na_jewelry_store/issues"
+  },
+  "homepage": "https://github.com/h0ss3in88/_na_jewelry_store#readme",
+  "dependencies": {
+    "async": "^3.2.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "naData": "file:../naData",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/async": "^3.0.8",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^8.3.8",
+    "@types/lodash": "^4.14.149",
+    "@types/mocha": "^7.0.2",
+    "@types/should": "^13.0.0",
+    "@types/validator": "^12.0.1",
+    "mocha": "^7.1.1",
+    "should": "^13.2.3"
+  }
+}
