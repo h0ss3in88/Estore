@@ -28,7 +28,7 @@
     "async": "^3.2.0",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "naData": "file:../naData",
     "validator": "^13.0.0"
   },
