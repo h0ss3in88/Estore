@@ -30,7 +30,7 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
     "naData": "file:../naData",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@types/async": "^3.0.8",
