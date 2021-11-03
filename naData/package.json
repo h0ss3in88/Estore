@@ -20,7 +20,7 @@
     "pluralize": "^8.0.0",
     "redis": "^3.0.2",
     "uuid": "^7.0.2",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@types/humps": "^1.1.3",
